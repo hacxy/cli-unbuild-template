@@ -27,3 +27,4 @@ const bootstrap = async () => {
   console.log(result);
 };
 bootstrap();
+export const foo = () => {};
