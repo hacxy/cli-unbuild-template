@@ -6,8 +6,7 @@
   "license": "MIT",
   "description": "",
   "bin": {
-    "create-tsapp": "index.js",
-    "cta": "index.js"
+    "hello-cli": "index.js"
   },
   "files": [
     "index.js",
