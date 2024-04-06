@@ -97,10 +97,10 @@ npm unlink -g
 
 - [prompts](https://github.com/terkelg/prompts) - 轻巧、美观且友好的交互提示工具
 
-> [!TIP] 在这个模板项目中, 默认内置了以下这些第三方库
->
-> - [kolorist](https://github.com/marvinhagemeister/kolorist)
-> - [commander.js](https://github.com/tj/commander.js)
-> - [prompts](https://github.com/terkelg/prompts)
->
-> 您无需再安装并且可以直接使用它们, 即使您不使用它们, 您也无需在意这些包, 因为它们并不会打包到您的生产环境代码中, 而且它们都属于开发时依赖, 所以用户在安装您的 CLI 应用程序时也不会将这些包下载至它们的本地.
+### 模板默认内置了以下这些第三方库:
+
+- [commander.js](https://github.com/tj/commander.js)
+- [kolorist](https://github.com/marvinhagemeister/kolorist)
+- [prompts](https://github.com/terkelg/prompts)
+
+> [!TIP] 您无需再安装并且可以直接使用它们, 即使您不使用它们, 您也无需在意这些包, 因为它们并不会打包到您的生产环境代码中, 而且它们都属于开发时依赖, 所以用户在安装您的 CLI 应用程序时也不会将这些包下载至它们的本地.
