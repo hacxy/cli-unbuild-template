@@ -3,7 +3,7 @@
   "tasks": [
     {
       "type": "npm",
-      "script": "dev:tsc",
+      "script": "build:sourcemap",
       "problemMatcher": [],
       "label": "npm: debug",
       "detail": "",

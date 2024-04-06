@@ -4,18 +4,17 @@
   "type": "module",
   "author": "hacxy",
   "license": "MIT",
-  "description": "",
+  "description": "CLI application project template developed by TypeScript",
   "bin": {
     "hello-cli": "dist/index.mjs"
   },
   "files": [
-    "index.js",
-    "dest"
+    "dist"
   ],
   "scripts": {
     "dev": "unbuild --stub",
-    "dev:tsc": "tsc --build --clean && tsc",
     "build": "unbuild",
+    "build:sourcemap": "unbuild --sourcemap",
     "typecheck": "tsc --noEmit"
   },
   "engines": {
@@ -25,13 +24,10 @@
     "cli"
   ],
   "devDependencies": {
-    "@types/minimist": "^1.2.5",
     "@types/prompts": "^2.4.9",
-    "cross-spawn": "^7.0.3",
+    "commander": "^12.0.0",
     "kolorist": "^1.8.0",
-    "minimist": "^1.2.8",
     "prompts": "^2.4.2",
-    "rimraf": "^5.0.5",
     "typescript": "^5.4.2",
     "unbuild": "^2.0.0"
   }

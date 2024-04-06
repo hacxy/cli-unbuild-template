@@ -1,29 +1,13 @@
 #!/usr/bin/env node
-import prompts from "prompts";
-const bootstrap = async () => {
-  const result = await prompts([
-    {
-      type: "text",
-      message: "Your name?",
-      name: "name",
-    },
-    {
-      type: "select",
-      message: "Your gender?",
-      name: "gender",
-      choices: [
-        {
-          title: "male",
-          value: "male",
-        },
-        {
-          title: "female",
-          value: "female",
-        },
-      ],
-    },
-  ]);
+import { program } from "commander";
+import pkg from "../package.json";
+import { registerPrograneOption } from "./option";
 
-  console.log(result);
+const bootstrap = async () => {
+  program.name(pkg.name).version(pkg.version).description(pkg.description);
+
+  registerPrograneOption();
+  program.parse(process.argv);
 };
+
 bootstrap();

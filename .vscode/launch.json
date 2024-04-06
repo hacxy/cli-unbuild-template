@@ -7,12 +7,23 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Cli App",
+      "name": "Launch CLI App",
       "skipFiles": ["<node_internals >/**"],
       "preLaunchTask": "npm: debug",
-      "program": "${workspaceFolder}/dist/index.js",
+      "program": "${workspaceFolder}/out/index.mjs",
       "console": "integratedTerminal",
       "autoAttachChildProcesses": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch CLI App With Option",
+      "skipFiles": ["<node_internals >/**"],
+      "preLaunchTask": "npm: debug",
+      "program": "${workspaceFolder}/out/index.mjs",
+      "console": "integratedTerminal",
+      "autoAttachChildProcesses": true,
+      "args": ["-n", "hacxy"]
     }
   ]
 }
