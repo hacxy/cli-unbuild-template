@@ -21,7 +21,7 @@ yarn create ts-frame my-cli-app --template cli
 pnpm create ts-frame my-cli-app --template cli
 
 # Bun
-bun x create-ts-frame my-cli-app --template cli
+bun create ts-frame my-cli-app --template cli
 ```
 
 ## Install dependencies.
@@ -84,7 +84,7 @@ yarn create ts-frame my-cli-app --template cli
 pnpm create ts-frame my-cli-app --template cli
 
 # Bun
-bun x create-ts-frame my-cli-app --template cli
+bun create ts-frame my-cli-app --template cli
 ```
 
 ## 安装依赖.
