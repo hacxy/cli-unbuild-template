@@ -1,6 +1,6 @@
 import { defineBuildConfig } from "unbuild";
-console.log();
-const enableSourcemap = process.argv.includes("--sourcemap");
+
+const enableOut = process.argv.includes("--out");
 export default defineBuildConfig({
   entries: ["src/index"],
 
@@ -9,9 +9,9 @@ export default defineBuildConfig({
   // Generates .d.ts declaration file
   declaration: false,
 
-  sourcemap: enableSourcemap,
+  sourcemap: enableOut,
   // Change outDir, default is 'dist'
-  outDir: enableSourcemap ? "out" : "dist",
+  outDir: enableOut ? "out" : "dist",
 
   rollup: {
     inlineDependencies: true,

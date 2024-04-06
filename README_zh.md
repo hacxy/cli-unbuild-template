@@ -51,6 +51,12 @@ npm run dev
 npm run build
 ```
 
+- 输出包含 sourcemap 的构建产物至 out 文件夹中
+
+```sh
+npm run build:out
+```
+
 - 类型检查。
 
 ```sh

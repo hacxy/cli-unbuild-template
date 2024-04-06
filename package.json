@@ -14,7 +14,7 @@
   "scripts": {
     "dev": "unbuild --stub",
     "build": "unbuild",
-    "build:sourcemap": "unbuild --sourcemap",
+    "build:out": "unbuild --out",
     "typecheck": "tsc --noEmit"
   },
   "engines": {
