@@ -1,5 +1,5 @@
+#!/usr/bin/env node
 import prompts from "prompts";
-
 const bootstrap = async () => {
   const result = await prompts([
     {

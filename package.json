@@ -6,7 +6,7 @@
   "license": "MIT",
   "description": "",
   "bin": {
-    "hello-cli": "index.js"
+    "hello-cli": "dist/index.mjs"
   },
   "files": [
     "index.js",
@@ -14,6 +14,7 @@
   ],
   "scripts": {
     "dev": "unbuild --stub",
+    "dev:tsc": "tsc --build --clean && tsc",
     "build": "unbuild",
     "typecheck": "tsc --noEmit"
   },
@@ -30,6 +31,7 @@
     "kolorist": "^1.8.0",
     "minimist": "^1.2.8",
     "prompts": "^2.4.2",
+    "rimraf": "^5.0.5",
     "typescript": "^5.4.2",
     "unbuild": "^2.0.0"
   }

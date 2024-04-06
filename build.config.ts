@@ -7,6 +7,7 @@ export default defineBuildConfig({
   // Generates .d.ts declaration file
   declaration: false,
 
+  sourcemap: false,
   // Change outDir, default is 'dist'
   outDir: "dist",
 

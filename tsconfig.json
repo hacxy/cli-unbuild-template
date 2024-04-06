@@ -1,5 +1,5 @@
 {
-  "include": ["build.config.ts", "src"],
+  "include": ["src"],
   "compilerOptions": {
     "outDir": "dist",
     "target": "ES2022",
@@ -7,8 +7,9 @@
     "moduleResolution": "bundler",
     "strict": true,
     "skipLibCheck": true,
+
     "declaration": false,
-    "sourceMap": false,
+    "sourceMap": true,
     "noUnusedLocals": true,
     "esModuleInterop": true
   }
