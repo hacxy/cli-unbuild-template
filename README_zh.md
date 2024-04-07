@@ -1,6 +1,6 @@
-# CLI Template
+# CLI Unbuild Template
 
-这是一个由 TypeScript 作为主要开发语言的 CLI 应用程序项目模板，方便您快速的搭建一个 CLI 应用程序项目, 它的开发模式是免 `watch` 和 `build` 的, 您不需要使用其他任何构建工具对 `ts` 代码进行构建监听。
+这是一个由 TypeScript 作为主要开发语言, 由 [unbuild](https://github.com/unjs/unbuild) 作为打包构建工具的 CLI 应用程序项目模板，方便您快速的搭建一个 CLI 应用程序项目, 它的开发模式是免 `watch` 和 `build` 的, 您不需要使用其他任何构建工具对 `ts` 代码进行构建监听。
 
 [English](https://github.com/hacxy/cli-template/blob/main/README.md) | 简体中文
 
@@ -98,10 +98,15 @@ npm unlink -g
 
 - [prompts](https://github.com/terkelg/prompts) - 轻巧、美观且友好的交互提示工具
 
+- [ora](https://github.com/sindresorhus/ora) - 提供友好的 loading 动画效果 (需要以 Dependencies 安装)
+
 ### 模板默认内置了以下这些第三方库:
 
 - [commander.js](https://github.com/tj/commander.js)
 - [kolorist](https://github.com/marvinhagemeister/kolorist)
 - [prompts](https://github.com/terkelg/prompts)
+- [ora](https://github.com/sindresorhus/ora)
 
-> [!TIP] 您无需再安装并且可以直接使用它们, 即使您不使用它们, 您也无需在意这些包, 因为它们并不会打包到您的生产环境代码中, 而且它们都属于开发时依赖, 所以用户在安装您的 CLI 应用程序时也不会将这些包下载至它们的本地.
+### 依赖性说明
+
+当您的第三方库以开发时依赖 (DevDependencies) 进行安装时, 执行`npm run build` 会将这些依赖打包进生产环境代码中, 如果您使用此方式安装并构建完成后, 发现程序工作异常, 则应该尝试将其作为生产环境依赖 (Dependencies) 进行安装, 当作为生产环境依赖进行安装时, 它们不会被打包进生产环境代码中.

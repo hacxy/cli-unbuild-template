@@ -1,6 +1,6 @@
-# CLI Template
+# CLI Unbuild Template
 
-This is a template for a typescript CLI application project that does not require watching and rebuilding during development.
+This is a CLI application project template developed primarily using TypeScript as the programming language. It facilitates the quick setup of a CLI application project, and its development mode does not require `watch` and `build`. You do not need to use any other build tools to monitor the construction of `ts` code.
 
 English | [简体中文](https://github.com/hacxy/cli-template/blob/main/README_zh.md)
 
