@@ -23,7 +23,7 @@
       "program": "${workspaceFolder}/out/index.mjs",
       "console": "integratedTerminal",
       "autoAttachChildProcesses": true,
-      "args": ["-n", "hacxy"]
+      "args": ["--name", "hacxy"]
     }
   ]
 }

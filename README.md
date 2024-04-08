@@ -103,16 +103,6 @@ In order to facilitate smooth development of scaffold applications , I have thou
 
 - [citty](https://github.com/unjs/citty) - Elegant CLI builder.
 
-### The following third-party libraries are built into templates by default :
-
-- [commander.js](https://github.com/tj/commander.js)
-
-- [kolorist](https://github.com/marvinhagemeister/kolorist)
-
-- [prompts](https://github.com/terkelg/prompts)
-
-- [ora](https://github.com/sindresorhus/ora)
-
 ### Dependency Description
 
 When your third-party library is installed as DevDependencies during development , these dependencies will be packaged into production environment codes after executing ' npm run build '. If program works abnormally after installing via such way and building completed afterwards , try installing them as production environment dependencies(Dependencies). They won't be packaged into production environment codes when installed as production environment dependencies.

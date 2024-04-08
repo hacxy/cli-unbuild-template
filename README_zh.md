@@ -102,13 +102,6 @@ npm unlink -g
 
 - [citty](https://github.com/unjs/citty) - 优雅的 CLI 构建器
 
-### 模板默认内置了以下这些第三方库:
-
-- [commander.js](https://github.com/tj/commander.js)
-- [kolorist](https://github.com/marvinhagemeister/kolorist)
-- [prompts](https://github.com/terkelg/prompts)
-- [ora](https://github.com/sindresorhus/ora)
-
 ### 依赖性说明
 
 当您的第三方库以开发时依赖 (DevDependencies) 进行安装时, 执行`npm run build` 会将这些依赖打包进生产环境代码中, 如果您使用此方式安装并构建完成后, 发现程序工作异常, 则应该尝试将其作为生产环境依赖 (Dependencies) 进行安装, 当作为生产环境依赖进行安装时, 它们不会被打包进生产环境代码中.
