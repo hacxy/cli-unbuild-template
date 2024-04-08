@@ -101,6 +101,8 @@ In order to facilitate smooth development of scaffold applications , I have thou
 
 - [ora](https://github.com/sindresorhus/ora) - Provides friendly loading animation effects (requires installation as Dependencies)
 
+- [citty](https://github.com/unjs/citty) - Elegant CLI builder.
+
 ### The following third-party libraries are built into templates by default :
 
 - [commander.js](https://github.com/tj/commander.js)

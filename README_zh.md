@@ -100,6 +100,8 @@ npm unlink -g
 
 - [ora](https://github.com/sindresorhus/ora) - 提供友好的 loading 动画效果 (需要以 Dependencies 安装)
 
+- [citty](https://github.com/unjs/citty) - 优雅的 CLI 构建器
+
 ### 模板默认内置了以下这些第三方库:
 
 - [commander.js](https://github.com/tj/commander.js)
