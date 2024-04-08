@@ -18,16 +18,16 @@
 
 ```sh
 # npm 7+, 需要额外的双破折号:
-npm create ts-frame@latest my-cli-app -- --template cli
+npm create ts-frame@latest my-cli-app -- --template cli-unbuild
 
 # yarn
-yarn create ts-frame my-cli-app --template cli
+yarn create ts-frame my-cli-app --template cli-unbuild
 
 # pnpm
-pnpm create ts-frame my-cli-app --template cli
+pnpm create ts-frame my-cli-app --template cli-unbuild
 
 # Bun
-bun create ts-frame my-cli-app --template cli
+bun create ts-frame my-cli-app --template cli-unbuild
 ```
 
 ### 安装依赖

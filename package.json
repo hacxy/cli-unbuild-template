@@ -1,10 +1,10 @@
 {
-  "name": "cli-template",
+  "name": "cli-unbuild-template",
   "version": "0.0.0",
   "type": "module",
   "author": "hacxy",
   "license": "MIT",
-  "description": "CLI application project template developed by TypeScript",
+  "description": "CLI application development template using unbuild as a build tool.",
   "bin": {
     "hello-cli": "dist/index.mjs"
   },
