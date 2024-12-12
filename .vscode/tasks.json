@@ -5,7 +5,7 @@
       "type": "npm",
       "script": "build:out",
       "problemMatcher": [],
-      "label": "npm: debug",
+      "label": "npm: build:out",
       "detail": "",
       "presentation": {
         "close": true,

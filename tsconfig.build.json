@@ -6,8 +6,9 @@
     "moduleResolution": "bundler",
     "strict": true,
     "noUnusedLocals": true,
-    "declaration": false,
-    "outDir": "dist",
+    "declaration": true,
+    "noEmit": false,
+    "outDir": "out",
     "sourceMap": true,
     "esModuleInterop": true,
     "skipLibCheck": true

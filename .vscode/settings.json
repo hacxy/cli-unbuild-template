@@ -3,6 +3,9 @@
   "prettier.enable": false,
   "editor.formatOnSave": false,
 
+  "debug.console.closeOnEnd": true,
+  "debug.closeReadonlyTabsOnEnd": true,
+
   // Auto fix
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",

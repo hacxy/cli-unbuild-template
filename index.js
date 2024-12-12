@@ -1,2 +1,3 @@
 #!/usr/bin/env node
-import 'dist/index.mjs';
+// eslint-disable-next-line antfu/no-import-dist
+import './dist/index.mjs';

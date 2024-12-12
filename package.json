@@ -18,12 +18,14 @@
     "node": "^18.0.0 || >=20.0.0"
   },
   "scripts": {
+    "start": "node index.js",
     "dev": "unbuild --stub",
     "build": "unbuild",
+    "build:out": "tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "release": "bumpp && pnpm publish",
-    "prepare": "simple-git-hooks",
     "lint": "eslint . --fix",
+    "prepare": "simple-git-hooks",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {

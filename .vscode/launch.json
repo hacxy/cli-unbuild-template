@@ -9,10 +9,11 @@
       "request": "launch",
       "name": "Launch CLI App",
       "skipFiles": ["<node_internals >/**"],
-      "preLaunchTask": "npm: debug",
-      "program": "${workspaceFolder}/out/index.mjs",
+      "preLaunchTask": "npm: build:out",
+      "program": "${workspaceFolder}/out/index.js",
       "console": "integratedTerminal",
       "autoAttachChildProcesses": true
+
     },
     {
       "type": "node",
