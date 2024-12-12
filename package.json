@@ -1,35 +1,48 @@
 {
   "name": "cli-unbuild-template",
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
+  "description": "CLI application development template using unbuild as a build tool.",
   "author": "",
   "license": "MIT",
-  "description": "CLI application development template using unbuild as a build tool.",
+  "keywords": [
+    "cli"
+  ],
   "bin": {
-    "hello-cli": "dist/index.mjs"
+    "hello-cli": "index.js"
   },
   "files": [
     "dist"
   ],
-  "scripts": {
-    "dev": "unbuild --stub",
-    "build": "unbuild",
-    "build:out": "unbuild --out",
-    "typecheck": "tsc --noEmit"
-  },
   "engines": {
     "node": "^18.0.0 || >=20.0.0"
   },
-  "keywords": [
-    "cli"
-  ],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp && pnpm publish",
+    "prepare": "simple-git-hooks",
+    "lint": "eslint . --fix",
+    "prepublishOnly": "npm run build"
+  },
   "devDependencies": {
-    "@eslint/js": "^9.1.1",
+    "@hacxy/eslint-config": "^0.0.4",
     "@types/node": "^20.12.5",
-    "eslint": "^8.57.0",
-    "globals": "^15.0.0",
-    "typescript": "^5.4.2",
-    "typescript-eslint": "^7.7.1",
+    "bumpp": "^9.9.0",
+    "eslint": "^9.16.0",
+    "lint-staged": "^15.2.11",
+    "simple-git-hooks": "^2.11.1",
+    "typescript": "^5.7.2",
     "unbuild": "^2.0.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "node scripts/git-hooks/commit-msg.mjs"
+  },
+  "lint-staged": {
+    "*": [
+      "eslint --flag unstable_ts_config . --fix"
+    ]
   }
 }
