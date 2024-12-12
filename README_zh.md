@@ -1,8 +1,14 @@
 # CLI Unbuild Template
 
-这是一个由 TypeScript 作为主要开发语言, 由 [unbuild](https://github.com/unjs/unbuild) 作为打包构建工具的 CLI 应用程序项目模板，方便您快速的搭建一个 CLI 应用程序项目, 它的开发模式是免 `watch` 和 `build` 的, 您不需要使用其他任何构建工具对 `ts` 代码进行构建监听。
+这是一个由 TypeScript 作为默认开发语言, 由 [unbuild](https://github.com/unjs/unbuild) 作为打包构建工具的 CLI 应用程序项目模板，方便您快速的搭建一个 CLI 应用程序项目.
 
 [English](https://github.com/hacxy/cli-template/blob/main/README.md) | 简体中文
+
+- [x] Eslint 格式化, 无需 Prettier
+- [x] Git 提交信息校验, 参考规范: [commit convention](./.github/COMMIT_CONVENTION.md)
+- [x] 一键发布npm, 自动创建github release
+- [x] vitest单元测试
+- [x] vscode debug
 
 ## 先决条件
 
