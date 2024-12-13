@@ -47,12 +47,12 @@
     "vitest": "^2.1.8"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged",
+    "pre-commit": "npx lint-staged",
     "commit-msg": "node scripts/git-hooks/commit-msg.mjs"
   },
   "lint-staged": {
     "*": [
-      "eslint --flag unstable_ts_config . --fix"
+      "eslint . --fix"
     ]
   },
   "config": {
