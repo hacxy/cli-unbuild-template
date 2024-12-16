@@ -25,7 +25,7 @@
     "build:out": "tsc -p tsconfig.build.json",
     "commit": "git-cz",
     "typecheck": "tsc --noEmit",
-    "release": "bumpp && pnpm publish",
+    "release": "bumpp && npm publish",
     "test": "vitest run",
     "coverage": "vitest run --coverage",
     "lint": "eslint .",
