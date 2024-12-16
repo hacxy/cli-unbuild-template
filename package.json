@@ -28,7 +28,7 @@
     "release": "bumpp && pnpm publish",
     "test": "vitest run",
     "coverage": "vitest run --coverage",
-    "lint": "eslint . --fix",
+    "lint": "eslint .",
     "prepare": "simple-git-hooks",
     "prepublishOnly": "npm run build"
   },
@@ -52,7 +52,7 @@
   },
   "lint-staged": {
     "*": [
-      "eslint . --fix"
+      "eslint --fix"
     ]
   },
   "config": {
